@@ -1,0 +1,11 @@
+@mixin gradientText {
+  background: $gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $colorWhite;
+  padding: 3.2rem 0;
+
+  .brand_container {
+    display: flex;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .links {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 3.9rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: inherit;
+          &:hover {
+            @include gradientText;
+          }
+        }
+
+        i {
+          &:hover {
+            @include gradientText;
+          }
+        }
+      }
+
+      button {
+        padding: 0.8rem;
+      }
+    }
+  }
+}
