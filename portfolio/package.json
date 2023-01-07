@@ -2,7 +2,7 @@
   "name": "vincent-kimatu-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "sass": "sass --watch scss/main.scss:css/main.css"
   },

@@ -1,0 +1,156 @@
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .default_margin {
+    margin: 0 10vw;
+  }
+
+  .navbar {
+    .brand_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+
+      .toggle {
+        display: block;
+      }
+    }
+
+    .links {
+      display: none;
+    }
+  }
+
+  .hero {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 2rem;
+
+    .content {
+      align-items: center;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .image {
+      position: initial;
+      img {
+        position: initial;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .about {
+    margin: 0 10vw;
+    .container {
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .container {
+      .play {
+        i {
+          font-size: 9rem;
+        }
+      }
+    }
+  }
+
+  .skills {
+    .content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .portfolio {
+    .container {
+      grid-template-columns: 1fr;
+
+      .portfolio_container {
+        padding: 1rem;
+
+        .image {
+          width: 200px;
+          img {
+            &:hover {
+              top: -100%;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          img {
+            &:hover {
+              top: -100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .languages {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      column-gap: 5px;
+    }
+  }
+
+  .contact {
+    flex-direction: column;
+    margin: 2rem 10vw;
+    gap: 5vw;
+
+    .left {
+      .form {
+        input {
+          padding-right: 10vw;
+        }
+      }
+    }
+
+    .right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    padding: 5vw 10vw;
+    grid-template-columns: 1fr;
+    gap: 10vw;
+  }
+  .lower_footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 5vw;
+    gap: 1rem;
+  }
+}

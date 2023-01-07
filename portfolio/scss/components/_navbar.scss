@@ -41,3 +41,49 @@
     }
   }
 }
+
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: 100% !important;
+  background-color: black;
+}
+
+.responsive_navbar {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 70%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  color: $colorWhite;
+  padding: 3rem 0;
+
+  .brand {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .links {
+    ul {
+      margin: 2vw;
+      li {
+        margin: 2vh;
+        font-size: 2.5vh;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+      ul {
+        display: flex;
+      }
+    }
+  }
+}
