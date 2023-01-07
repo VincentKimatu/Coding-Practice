@@ -70,8 +70,18 @@ p {
     width: 12rem;
     background: $gradient;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     left: -10px;
     top: -8px;
+  }
+}
+
+.right {
+  position: relative;
+  .background {
+    top: auto;
+    left: auto;
+    right: -10px;
+    bottom: -8px;
   }
 }

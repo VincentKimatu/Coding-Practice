@@ -1,0 +1,19 @@
+.scroll_to_top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 20;
+  background-color: $scrollToTopBgColor;
+  padding: 1.6rem 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  i {
+    @include gradientText;
+    font-size: 2rem;
+  }
+  &:hover {
+    bottom: 45px;
+    transition: all 0.3s;
+  }
+}

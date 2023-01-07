@@ -1,0 +1,72 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: $backgroundColorGrey;
+  gap: 5rem;
+  padding: 5rem 14rem;
+  color: $colorTertiary;
+
+  .section {
+    h2 {
+      @include gradientText;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .title {
+      color: $colorWhite;
+      margin-bottom: 1.3rem;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      gap: 1rem;
+      i {
+        font-size: 1.5rem;
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      box-shadow: 2px 1000px 1px $backgroundColorGrey inset;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      li {
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          @include gradientText;
+        }
+      }
+    }
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li {
+        padding: 0.5rem;
+        width: max-content;
+        border: 1px solid $colorGrey;
+        &:hover {
+          border: 1px solid $colorWhite;
+        }
+      }
+    }
+  }
+}
+
+.lower_footer {
+  color: $colorTertiary;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 14rem;
+}

@@ -57,12 +57,12 @@ ul {
 }
 .navbar .links ul li a:hover {
   background: linear-gradient(to right, #c5e35b, #45b649);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .navbar .links ul li i:hover {
   background: linear-gradient(to right, #c5e35b, #45b649);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .navbar .links ul button {
@@ -84,7 +84,7 @@ ul {
 }
 .hero .content .title h1 {
   background: linear-gradient(to right, #c5e35b, #45b649);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 5rem;
 }
@@ -117,7 +117,7 @@ ul {
 }
 .about .container .play i {
   background: linear-gradient(to right, #c5e35b, #45b649);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 12rem;
 }
@@ -176,6 +176,211 @@ ul {
 
 .three .bar {
   clip: rect(40px, 100px, 100px, 30px);
+}
+
+.portfolio {
+  position: relative;
+}
+.portfolio .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  gap: 2rem;
+}
+.portfolio .container .portfolio_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #181818;
+  padding: 2rem;
+  text-align: center;
+}
+.portfolio .container .portfolio_container .image {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  border: 1px;
+  margin: 0 auto;
+}
+.portfolio .container .portfolio_container .image img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: all 8s;
+}
+.portfolio .container .portfolio_container .image img:hover {
+  top: -500px;
+  transition: all 8s;
+}
+
+.languages .container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.languages .container .language img {
+  height: 7rem;
+  filter: brightness(0) invert(1);
+  transition: 0.5s ease-in-out;
+}
+.languages .container .language img:hover {
+  filter: none;
+}
+.languages .container .language:nth-child(4) img {
+  filter: grayscale(100) invert(1);
+}
+.languages .container .language:nth-child(4) img:hover {
+  filter: none;
+}
+
+.contact {
+  display: flex;
+  margin: 4rem 20rem;
+  gap: 3rem;
+}
+.contact .right img {
+  height: 30rem;
+  width: 26rem;
+  object-fit: cover;
+}
+.contact .left .title .bar {
+  height: 0.5rem;
+  width: 5rem;
+  background: linear-gradient(to right, #c5e35b, #45b649);
+  margin-bottom: 1rem;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+.contact .form input {
+  padding: 0.8rem 9rem 0.8rem 1rem;
+  background-color: transparent;
+  border: 1px solid #818080;
+  color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #181818;
+  gap: 5rem;
+  padding: 5rem 14rem;
+  color: #818080;
+}
+footer .section h2 {
+  background: linear-gradient(to right, #c5e35b, #45b649);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+footer .section .title {
+  color: white;
+  margin-bottom: 1.3rem;
+}
+footer .section .social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+footer .section .social i {
+  font-size: 1.5rem;
+}
+footer .section button {
+  margin-top: 1rem;
+  box-shadow: 2px 1000px 1px #181818 inset;
+}
+footer .section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+footer .section ul li {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+footer .section ul li:hover {
+  background: linear-gradient(to right, #c5e35b, #45b649);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer .section .tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .section .tags li {
+  padding: 0.5rem;
+  width: max-content;
+  border: 1px solid #999999;
+}
+footer .section .tags li:hover {
+  border: 1px solid white;
+}
+
+.lower_footer {
+  color: #818080;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 14rem;
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.services .container .service {
+  height: 170px;
+  background-color: #181818;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+.services .container .service i {
+  background: linear-gradient(to right, #c5e35b, #45b649);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+.scroll_to_top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 20;
+  background-color: #303030;
+  padding: 1.6rem 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.scroll_to_top i {
+  background: linear-gradient(to right, #c5e35b, #45b649);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+.scroll_to_top:hover {
+  bottom: 45px;
+  transition: all 0.3s;
 }
 
 .gradient {
@@ -249,9 +454,19 @@ p {
   width: 12rem;
   background: linear-gradient(to right, #c5e35b, #45b649);
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   left: -10px;
   top: -8px;
+}
+
+.right {
+  position: relative;
+}
+.right .background {
+  top: auto;
+  left: auto;
+  right: -10px;
+  bottom: -8px;
 }
 
 /*# sourceMappingURL=main.css.map */
