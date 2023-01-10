@@ -7,3 +7,4 @@
 | File                                     | Description                                 |
 | ---------------------------------------- | ------------------------------------------- |
 | [QR code component](./qr-code-component) | A perfect first challenge for HTML and CSS. |
+| [product-preview-card-component-main](./product-preview-card-component-main)| A perfect first challenge for learning responsive cards.|
