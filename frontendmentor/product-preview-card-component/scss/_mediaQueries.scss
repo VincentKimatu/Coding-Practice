@@ -1,0 +1,17 @@
+@media screen and (max-width: 375px) {
+  main {
+    background-color: $White;
+    display: flex;
+    flex-direction: column;
+    min-height: 53rem;
+    max-width: 35rem;
+
+    picture {
+      border-radius: 1rem 1rem 0 0;
+      img {
+        width: 100%;
+        border-radius: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $Cream;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: $White;
+  width: 39rem;
+  height: 29rem;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 13px 6px rgba(242, 235, 227, 1);
+  -webkit-box-shadow: 2px 2px 13px 6px rgba(242, 235, 227, 1);
+  -moz-box-shadow: 2px 2px 13px 6px rgba(242, 235, 227, 1);
+  picture {
+    border-radius: 1rem 0 0 1rem;
+    img {
+      height: 29rem;
+      border-radius: inherit;
+    }
+  }
+  .card > * {
+    margin-top: 1.5rem;
+  }
+  .card {
+    margin: 1.5rem;
+    h4 {
+      @include MontserratFont;
+      font-size: 0.8rem;
+      letter-spacing: 0.4rem;
+      color: $darkGrayishBlue;
+    }
+    h1 {
+      @include FrauncesFont;
+      font-size: 2.3rem;
+      line-height: 2.2rem;
+    }
+    p {
+      @include MontserratFont;
+      font-size: 1rem;
+      color: $darkGrayishBlue;
+    }
+    .price {
+      display: flex;
+      h2 {
+        @include FrauncesFont;
+        color: $darkCyan;
+      }
+      del {
+        @include MontserratFont;
+        color: $darkGrayishBlue;
+        margin-left: 1rem;
+      }
+    }
+    button {
+      @include MontserratFont;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $darkCyan;
+      color: $White;
+      padding: 0.8rem;
+      width: 100%;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition-duration: 500ms;
+      img {
+        margin-right: 1rem;
+      }
+      &:hover {
+        background-color: $veryDarkBlue;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: darkBlue;
+  text-decoration: none;
+}
