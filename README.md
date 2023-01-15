@@ -8,4 +8,4 @@
 
 
 ### Frontendmentor :file_folder:
-	* Projects in this [directory](./frontendmentor) are challenges from [frontendmentor website](https://www.frontendmentor.io/).
+- Projects in this [directory](./frontendmentor) are challenges from [frontendmentor website](https://www.frontendmentor.io/).
