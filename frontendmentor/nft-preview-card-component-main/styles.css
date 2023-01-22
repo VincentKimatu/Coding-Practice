@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --veryDarkMain: hsl(217, 54%, 11%);
+  --veryDark: hsl(216, 50%, 16%);
+  --veryDarkLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  background-color: var(--veryDarkMain);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 30rem;
+  background-color: var(--veryDark);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+main .image {
+  width: 26rem;
+}
+
+main .image img {
+  max-width: 100%;
+  border-radius: 1.5rem;
+}
+
+main .texts h1 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  transition: 300ms ease-in-out;
+}
+main .texts h1:hover {
+  color: var(--cyan);
+}
+
+main .texts p {
+  color: var(--softBlue);
+  font-size: 1.4rem;
+  padding-top: 2rem;
+}
+
+main .price_container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--softBlue);
+  padding: 2rem 0 2rem 0;
+}
+
+main .price_container img {
+  padding-right: 0.8rem;
+}
+
+main .price_container .price {
+  display: flex;
+  align-items: center;
+  color: var(--cyan);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+main .price_container .expiry {
+  display: flex;
+  align-items: center;
+  color: var(--softBlue);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+main .credits {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+main .credits img {
+  width: 4rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--white);
+}
+
+main .credits p {
+  font-size: 1.4rem;
+  color: var(--softBlue);
+  margin-left: 2rem;
+}
+
+main .credits p .name {
+  color: var(--white);
+  transition: 300ms ease-in-out;
+}
+main .credits p .name:hover {
+  color: var(--cyan);
+}
+
+.attribution {
+  color: var(--softBlue);
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: var(--cyan);
+  text-decoration: none;
+}
