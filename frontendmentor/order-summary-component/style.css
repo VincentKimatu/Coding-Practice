@@ -1,0 +1,186 @@
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --purple: hsl(273, 58%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-color: var(--veryPaleBlue);
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+main {
+  width: 35rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+
+  box-shadow: 0px 4px 15px 3px rgba(31, 47, 86, 0.32);
+  -webkit-box-shadow: 0px 4px 15px 3px rgba(31, 47, 86, 0.32);
+  -moz-box-shadow: 0px 4px 15px 3px rgba(31, 47, 86, 0.32);
+}
+
+main figure img {
+  border-radius: 2rem 2rem 0 0;
+}
+
+main .texts h1 {
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2rem;
+}
+main .texts p {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--desaturatedBlue);
+}
+
+main .plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--veryPaleBlue);
+  margin: 1rem 3rem 1.5rem 3rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+main .plan div {
+  display: flex;
+  align-items: center;
+}
+
+main .plan div img {
+  width: 3rem;
+  height: 3rem;
+}
+
+main .plan div .price {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+main .plan div .price h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .plan div .price p {
+  font-size: 1.3rem;
+  color: var(--desaturatedBlue);
+}
+main .plan a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: 300ms ease-in-out;
+}
+main .plan a:hover {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+main .buttons {
+  display: flex;
+  flex-direction: column;
+}
+main .buttons button {
+  margin: 0 3rem 1rem 3rem;
+  padding: 1rem 0 1rem 0;
+  font-weight: 700;
+  border: none;
+}
+
+main .buttons .primary {
+  background-color: var(--brightBlue);
+  color: var(--veryPaleBlue);
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+main .buttons .primary:hover {
+  background-color: var(--purple);
+
+  box-shadow: 0px 8px 8px -3px rgba(157, 90, 211, 0.32);
+  -webkit-box-shadow: 0px 8px 8px -3px rgba(157, 90, 211, 0.32);
+  -moz-box-shadow: 0px 8px 8px -3px rgba(157, 90, 211, 0.32);
+}
+
+main .buttons .secondary {
+  background-color: transparent;
+  color: var(--darkBlue);
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+main .buttons .secondary:hover {
+  color: var(--black);
+  font-size: 900;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: darkBlue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: var(--veryPaleBlue);
+  }
+}
