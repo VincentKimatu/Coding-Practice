@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: $veryLightGray;
+  border-radius: 2rem;
+  border: 2px solid $veryLightGray;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  transition: 200ms;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $veryLightGray;
+  color: $veryLightGray;
+  @include LexendDeca;
+  main {
+    display: flex;
+    max-width: 70vw;
+    div {
+      padding: 3rem;
+
+      .icon {
+        padding: 0;
+      }
+      h1 {
+        @include BigShouldersDisplay;
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding-top: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+        padding: 2rem 0 4rem 0;
+      }
+    }
+
+    .card_one {
+      background-color: $brightOrange;
+      border-radius: 1rem 0 0 1rem;
+      button {
+        color: $brightOrange;
+        &:hover {
+          border-color: $veryLightGray;
+          background-color: transparent;
+          color: $veryLightGray;
+        }
+      }
+    }
+
+    .card_two {
+      background-color: $darkCyan;
+      button {
+        color: $darkCyan;
+        &:hover {
+          border-color: $veryLightGray;
+          background-color: transparent;
+          color: $veryLightGray;
+        }
+      }
+    }
+    .card_three {
+      background-color: $veryDarkCyan;
+      border-radius: 0 1rem 1rem 0;
+      button {
+        color: $veryDarkCyan;
+        &:hover {
+          border-color: $veryLightGray;
+          background-color: transparent;
+          color: $veryLightGray;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    color: $veryDarkCyan;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .attribution a {
+    color: $brightOrange;
+    text-decoration: none;
+  }
+}

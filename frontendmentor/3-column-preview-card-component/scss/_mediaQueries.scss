@@ -1,0 +1,17 @@
+@media screen and (max-width: 375px) {
+  body {
+    main {
+      display: flex;
+      flex-direction: column;
+      max-width: 90vw;
+
+      .card_one {
+        border-radius: 1rem 1rem 0 0;
+      }
+
+      .card_three {
+        border-radius: 0 0 1rem 1rem;
+      }
+    }
+  }
+}
