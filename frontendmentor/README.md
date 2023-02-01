@@ -13,3 +13,5 @@
 5. [order-summary-component](./order-summary-component)
 6. [Stats-Preview-Card](./Stats-Preview-Card)
 7. [3-column-preview-card-component](./3-column-preview-card-component)
+8. [profile-card-component-main](./profile-card-component-main)
+9. [social-proof-section](./social-proof-section)
