@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+picture,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  // sets 1rem to be 10px
+  font-size: 52.5%;
+}
+p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'League Spartan', sans-serif;
+}
+
+main {
+  max-width: 900px;
+  background-color: $White;
+  padding: 7rem;
+  border-radius: 2rem;
+
+  box-shadow: 2px 0px 17px -1px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 2px 0px 17px -1px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 2px 0px 17px -1px rgba(0, 0, 0, 0.29);
+  .top {
+    display: flex;
+    justify-content: space-between;
+    .top__one {
+      max-width: 50%;
+      h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $VeryDarkMagenta;
+      }
+      p {
+        margin-top: 1.5rem;
+        color: $DarkGrayishMagenta;
+      }
+    }
+    .ratings {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      .star__container {
+        display: flex;
+        align-items: center;
+        background-color: $LightGrayishMagenta;
+        padding: 1.4rem 2rem;
+        max-width: 42rem;
+        border-radius: 5px;
+        .stars {
+          display: flex;
+          max-height: 2rem;
+          img {
+            margin-right: 5px;
+          }
+        }
+        p {
+          font-weight: 500;
+          padding-left: 2rem;
+          color: $VeryDarkMagenta;
+        }
+      }
+    }
+  }
+
+  .star__container-one {
+    margin-right: 50px;
+    margin-left: -50px;
+  }
+  .star__container-two {
+    margin-right: 25px;
+    margin-left: -25px;
+  }
+
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
+    .testimonial__card {
+      width: 33%;
+      background-color: $VeryDarkMagenta;
+      padding: 2rem;
+      border-radius: 5px;
+      figure {
+        display: flex;
+        align-items: center;
+        .image {
+          width: 35px;
+          img {
+            border-radius: 50%;
+          }
+        }
+        figcaption {
+          margin-left: 2rem;
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $LightGrayishMagenta;
+          }
+          h4 {
+            color: $SoftPink;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding-top: 2px;
+          }
+        }
+      }
+      blockquote {
+        margin-top: 2rem;
+        p {
+          color: $LightGrayishMagenta;
+        }
+      }
+    }
+  }
+
+  .testimonial__card-one {
+    margin-bottom: 30px;
+  }
+  .testimonial__card-two {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .testimonial__card-three {
+    margin-top: 30px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: $VeryDarkMagenta;
+  text-decoration: none;
+}

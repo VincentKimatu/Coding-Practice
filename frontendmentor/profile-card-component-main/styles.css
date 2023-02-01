@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+canvas,
+video,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* Primary */
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+
+  /* Neutral */
+  --darkGray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkCyan);
+}
+
+main {
+  max-width: 35rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5rem;
+  z-index: -2;
+}
+
+main .image {
+  position: relative;
+  height: 15rem;
+  width: 35rem;
+  z-index: -1;
+}
+
+main .image img {
+  position: absolute;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+main figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -6rem;
+}
+
+main figure img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+main figure figcaption div {
+  display: flex;
+  padding-top: 2rem;
+}
+
+main figure figcaption div h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+main figure figcaption div h2 {
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  color: var(--darkGrayishBlue);
+}
+
+main figure figcaption h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--darkGrayishBlue);
+  padding: 1rem 0 2rem 0;
+}
+
+main .stats {
+  text-align: center;
+  min-width: 35rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0 1rem 0;
+  border-top: 1px solid var(--darkGrayishBlue);
+}
+
+main .stats h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+main .stats h5 {
+  color: var(--darkGray);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main .stats .stat_two {
+  padding: 0 5rem 0 5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 375px) {
+  main {
+    max-width: 30rem;
+  }
+  main .image {
+    width: 30rem;
+  }
+  main figure {
+    margin-top: -8rem;
+  }
+  main .stats {
+    min-width: 30rem;
+  }
+}

@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+picture,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 52.5%;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  max-width: 900px;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 7rem;
+  border-radius: 2rem;
+  box-shadow: 2px 0px 17px -1px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 2px 0px 17px -1px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 2px 0px 17px -1px rgba(0, 0, 0, 0.29);
+}
+main .top {
+  display: flex;
+  justify-content: space-between;
+}
+main .top .top__one {
+  max-width: 50%;
+}
+main .top .top__one h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: hsl(300deg, 43%, 22%);
+}
+main .top .top__one p {
+  margin-top: 1.5rem;
+  color: hsl(303deg, 10%, 53%);
+}
+main .top .ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .top .ratings .star__container {
+  display: flex;
+  align-items: center;
+  background-color: hsl(300deg, 24%, 96%);
+  padding: 1.4rem 2rem;
+  max-width: 42rem;
+  border-radius: 5px;
+}
+main .top .ratings .star__container .stars {
+  display: flex;
+  max-height: 2rem;
+}
+main .top .ratings .star__container .stars img {
+  margin-right: 5px;
+}
+main .top .ratings .star__container p {
+  font-weight: 500;
+  padding-left: 2rem;
+  color: hsl(300deg, 43%, 22%);
+}
+main .star__container-one {
+  margin-right: 50px;
+  margin-left: -50px;
+}
+main .star__container-two {
+  margin-right: 25px;
+  margin-left: -25px;
+}
+main .testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+main .testimonials .testimonial__card {
+  width: 33%;
+  background-color: hsl(300deg, 43%, 22%);
+  padding: 2rem;
+  border-radius: 5px;
+}
+main .testimonials .testimonial__card figure {
+  display: flex;
+  align-items: center;
+}
+main .testimonials .testimonial__card figure .image {
+  width: 35px;
+}
+main .testimonials .testimonial__card figure .image img {
+  border-radius: 50%;
+}
+main .testimonials .testimonial__card figure figcaption {
+  margin-left: 2rem;
+}
+main .testimonials .testimonial__card figure figcaption h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: hsl(300deg, 24%, 96%);
+}
+main .testimonials .testimonial__card figure figcaption h4 {
+  color: hsl(333deg, 80%, 67%);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 2px;
+}
+main .testimonials .testimonial__card blockquote {
+  margin-top: 2rem;
+}
+main .testimonials .testimonial__card blockquote p {
+  color: hsl(300deg, 24%, 96%);
+}
+main .testimonial__card-one {
+  margin-bottom: 30px;
+}
+main .testimonial__card-two {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+main .testimonial__card-three {
+  margin-top: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.attribution a {
+  color: hsl(300deg, 43%, 22%);
+  text-decoration: none;
+}
+
+@media (max-width: 790px) {
+  main {
+    max-width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  main .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .top .top__one {
+    max-width: 70%;
+  }
+  main .star__container-one {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  main .star__container-two {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    max-width: 90%;
+    padding: 2rem;
+  }
+  main .top .top__one {
+    max-width: 90%;
+  }
+  main .top .top__one h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  main .top .top__one p {
+    text-align: center;
+  }
+  main .top .ratings .star__container {
+    flex-direction: column;
+  }
+  main .top .ratings .star__container p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  main .testimonials {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .testimonials .testimonial__card {
+    width: 90%;
+  }
+  main .testimonial__card-one {
+    margin-bottom: 0;
+  }
+  main .testimonial__card-two {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  main .testimonial__card-three {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

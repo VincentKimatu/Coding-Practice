@@ -1,0 +1,52 @@
+@media screen and (max-width: 375px) {
+  body {
+    main {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column-reverse;
+      max-width: 35rem;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        h1,
+        p {
+          text-align: center;
+          padding-top: 1rem;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+        .stats {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 0;
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3rem;
+            h3 {
+              font-size: 2.5rem;
+            }
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+      picture {
+        ::before {
+          width: 35rem;
+          height: 25.6rem;
+          border-radius: 1rem 1rem 0 0;
+        }
+        img {
+          border-radius: 1rem 1rem 0 0;
+        }
+      }
+    }
+  }
+}
