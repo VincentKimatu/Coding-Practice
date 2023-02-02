@@ -4,7 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Rubik Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Chat-App-Illustration</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="bg"></div>
+    <main>
+      <section class="mobile">
+        <header>
+          <div class="mobile__notch"></div>
+          <div class="bottom">
+            <div class="header-left">
+              <i class="fa-solid fa-chevron-left"></i>
+              <figure>
+                <div class="header__avatar">
+                  <img
+                    src="./images/avatar.jpg"
+                    alt="headshot of Samuel Green"
+                  />
+                </div>
+                <figcaption>
+                  <h1>Samuel Green</h1>
+                  <p>Available to Walk</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="Verticle-ellipsis">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
+        </header>
+        <div class="body">
+          <div class="body__message-received">
+            <p>That sounds great. I'd be happy with that.</p>
+          </div>
+          <div class="body__message-received">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="body__message-sent">
+            <div class="body__message-sent-image">
+              <img src="./images/dog-image-1.jpg" alt="Image of a dog" />
+              <img src="./images/dog-image-2.jpg" alt="Image of a dog" />
+              <img src="./images/dog-image-3.jpg" alt="Image of a dog" />
+            </div>
+          </div>
+          <div class="body__message-sent-texts">
+            <p>Here are a few pictures. She's a happy girl!</p>
+          </div>
+          <div class="body__message-sent-texts"><p>Can you make it?</p></div>
+          <div class="body__message-received">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+          </div>
+          <button class="body__message-received-btn gradient__color">
+            <i class="fa-regular fa-circle"></i>
+            <p>30 minute walk</p>
+            <p class="price">$29</p>
+          </button>
+          <button class="body__message-received-btn gradient__color">
+            <i class="fa-regular fa-circle"></i>
+            <p>1 hour walk</p>
+            <p class="price">$49</p>
+          </button>
+          <form>
+            <input type="text" placeholder="Type a message" />
+            <label for="text">
+              <i class="fa-solid fa-circle-chevron-right"></i
+            ></label>
+          </form>
+        </div>
+      </section>
+      <section class="texts">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

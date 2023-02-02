@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+canvas,
+video {
+  width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  // display: flex;
+  // justify-content: center;
+  // // align-items: center;
+}
+
+body {
+  @include flexCenter;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background-color: $LightGrayishViolet;
+
+  .bg {
+    width: 30vw;
+    height: 80vh;
+    position: absolute;
+    background-image: linear-gradient(to bottom, $LightMagenta, $LightViolet);
+    top: 0;
+    left: -100px;
+    z-index: -1;
+    border-radius: 0 0 15vw 15vw;
+  }
+}
+
+main {
+  @include flexCenter;
+  gap: 100px;
+  .mobile {
+    border: 10px solid $White;
+    max-width: 320px;
+    // min-width: 350px;
+    border-radius: 40px;
+    overflow: hidden;
+    // height: 700px;
+    header {
+      background-image: linear-gradient(to right, $LightViolet, $LightMagenta);
+
+      .mobile__notch {
+        width: 180px;
+        height: 25px;
+        background-color: $White;
+        margin: auto;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .bottom {
+        @include flexAlignCenter;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        .header-left {
+          @include flexAlignCenter;
+          margin-left: 15px;
+          i {
+            font-weight: bold;
+            font-size: 16px;
+            color: $White;
+          }
+          figure {
+            @include flexAlignCenter;
+            margin-left: 10px;
+
+            .header__avatar {
+              border-radius: 50%;
+              overflow: hidden;
+              border: 2px solid $LightGrayishViolet;
+              img {
+                width: 30px;
+              }
+            }
+            figcaption {
+              margin-left: 10px;
+              h1 {
+                color: $LightGrayishViolet;
+              }
+              p {
+                color: $PaleViolet;
+              }
+            }
+          }
+        }
+
+        .Verticle-ellipsis {
+          margin-right: 20px;
+          i {
+            font-weight: bold;
+            font-size: 16px;
+            color: $White;
+          }
+        }
+      }
+    }
+
+    .body {
+      background-color: $LightGrayishViolet;
+      padding: 10px;
+      div,
+      button {
+        margin-bottom: 10px;
+      }
+
+      .body__message-received {
+        color: $ModerateViolet;
+        width: 170px;
+        p {
+          border-radius: 15px 15px 15px 5px;
+          font-size: 12px;
+          background-color: $PaleVioletLow;
+          padding: 10px 15px 10px 10px;
+        }
+      }
+
+      .body__message-sent,
+      .body__message-sent-texts {
+        display: flex;
+        justify-content: flex-end;
+        &-image {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 0;
+          img {
+            width: 50px;
+            border-radius: 10px;
+          }
+        }
+        p {
+          width: 170px;
+          border-radius: 15px 15px 5px 15px;
+          font-size: 12px;
+          background-color: $White;
+          color: $DesaturatedDarkViolet;
+          padding: 10px 15px 10px 10px;
+        }
+      }
+      .body__message-received-btn {
+        @include flexAlignCenter;
+        justify-content: space-around;
+        display: flex;
+        width: 200px;
+        padding: 10px;
+        background-image: linear-gradient(
+          to right,
+          $LightMagenta,
+          $LightViolet
+        );
+        border: none;
+        border-radius: 15px 15px 15px 5px;
+
+        i {
+          color: $VeryLightMagenta;
+        }
+        p {
+          color: $White;
+        }
+
+        .price {
+          font-size: 16px;
+          font-weight: 700;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  form {
+    @include flexAlignCenter;
+    justify-content: space-between;
+    background-color: $White;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 17.5px;
+    input {
+      border: none;
+      width: 270px;
+      height: 100%;
+      border-radius: 17.5px;
+      padding-left: 20px;
+      &:focus {
+        outline: none;
+      }
+    }
+    label {
+      cursor: pointer;
+      i {
+        font-size: 30px;
+        margin-right: 3px;
+        color: $VeryDarkDesaturatedViolet;
+      }
+    }
+  }
+  .texts {
+    width: 30vw;
+    h1 {
+      font-size: 40px;
+      color: $VeryDarkDesaturatedViolet;
+    }
+    p {
+      font-size: 16px;
+      color: $DarkGrayishViolet;
+    }
+  }
+}

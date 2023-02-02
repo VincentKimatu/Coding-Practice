@@ -1,0 +1,76 @@
+@media (max-width: 750px) {
+  main {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 630px) {
+  main {
+    flex-direction: column;
+    gap: 50px;
+    .texts {
+      width: 80vw;
+    }
+  }
+  body {
+    .bg {
+      width: 30vw;
+      height: 80vh;
+      position: absolute;
+      background-image: linear-gradient(to bottom, $LightMagenta, $LightViolet);
+      top: 0;
+      left: -50px;
+      z-index: -1;
+      border-radius: 0 0 15vw 15vw;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    .bg {
+      width: 50vw;
+      top: -100px;
+      left: -50px;
+    }
+  }
+  main {
+    flex-direction: column;
+    gap: 50px;
+    .texts {
+      width: 80vw;
+      h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  main {
+    gap: 30px;
+    .mobile {
+      max-width: 80vw;
+      header {
+        .mobile__notch {
+          width: 150px;
+        }
+      }
+
+      .body {
+        div,
+        button {
+          margin-bottom: 5px;
+        }
+
+        .body__message-received-btn {
+          width: 180px;
+        }
+      }
+    }
+  }
+}

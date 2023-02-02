@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+canvas,
+video {
+  width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(270deg, 20%, 96%);
+}
+body .bg {
+  width: 30vw;
+  height: 80vh;
+  position: absolute;
+  background-image: linear-gradient(to bottom, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  top: 0;
+  left: -100px;
+  z-index: -1;
+  border-radius: 0 0 15vw 15vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+main .mobile {
+  border: 10px solid hsl(0deg, 0%, 100%);
+  max-width: 320px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+main .mobile header {
+  background-image: linear-gradient(to right, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
+}
+main .mobile header .mobile__notch {
+  width: 180px;
+  height: 25px;
+  background-color: hsl(0deg, 0%, 100%);
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+}
+main .mobile header .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+main .mobile header .bottom .header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+main .mobile header .bottom .header-left i {
+  font-weight: bold;
+  font-size: 16px;
+  color: hsl(0deg, 0%, 100%);
+}
+main .mobile header .bottom .header-left figure {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+main .mobile header .bottom .header-left figure .header__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid hsl(270deg, 20%, 96%);
+}
+main .mobile header .bottom .header-left figure .header__avatar img {
+  width: 30px;
+}
+main .mobile header .bottom .header-left figure figcaption {
+  margin-left: 10px;
+}
+main .mobile header .bottom .header-left figure figcaption h1 {
+  color: hsl(270deg, 20%, 96%);
+}
+main .mobile header .bottom .header-left figure figcaption p {
+  color: hsl(276deg, 100%, 81%);
+}
+main .mobile header .bottom .Verticle-ellipsis {
+  margin-right: 20px;
+}
+main .mobile header .bottom .Verticle-ellipsis i {
+  font-weight: bold;
+  font-size: 16px;
+  color: hsl(0deg, 0%, 100%);
+}
+main .mobile .body {
+  background-color: hsl(270deg, 20%, 96%);
+  padding: 10px;
+}
+main .mobile .body div,
+main .mobile .body button {
+  margin-bottom: 10px;
+}
+main .mobile .body .body__message-received {
+  color: hsl(276deg, 55%, 52%);
+  width: 170px;
+}
+main .mobile .body .body__message-received p {
+  border-radius: 15px 15px 15px 5px;
+  font-size: 12px;
+  background-color: rgba(216, 158, 255, 0.322);
+  padding: 10px 15px 10px 10px;
+}
+main .mobile .body .body__message-sent,
+main .mobile .body .body__message-sent-texts {
+  display: flex;
+  justify-content: flex-end;
+}
+main .mobile .body .body__message-sent-image,
+main .mobile .body .body__message-sent-texts-image {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+}
+main .mobile .body .body__message-sent-image img,
+main .mobile .body .body__message-sent-texts-image img {
+  width: 50px;
+  border-radius: 10px;
+}
+main .mobile .body .body__message-sent p,
+main .mobile .body .body__message-sent-texts p {
+  width: 170px;
+  border-radius: 15px 15px 5px 15px;
+  font-size: 12px;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(271deg, 15%, 43%);
+  padding: 10px 15px 10px 10px;
+}
+main .mobile .body .body__message-received-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  width: 200px;
+  padding: 10px;
+  background-image: linear-gradient(to right, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  border: none;
+  border-radius: 15px 15px 15px 5px;
+}
+main .mobile .body .body__message-received-btn i {
+  color: hsl(289deg, 100%, 72%);
+}
+main .mobile .body .body__message-received-btn p {
+  color: hsl(0deg, 0%, 100%);
+}
+main .mobile .body .body__message-received-btn .price {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+main form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0deg, 0%, 100%);
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 17.5px;
+}
+main form input {
+  border: none;
+  width: 270px;
+  height: 100%;
+  border-radius: 17.5px;
+  padding-left: 20px;
+}
+main form input:focus {
+  outline: none;
+}
+main form label {
+  cursor: pointer;
+}
+main form label i {
+  font-size: 30px;
+  margin-right: 3px;
+  color: hsl(271deg, 36%, 24%);
+}
+main .texts {
+  width: 30vw;
+}
+main .texts h1 {
+  font-size: 40px;
+  color: hsl(271deg, 36%, 24%);
+}
+main .texts p {
+  font-size: 16px;
+  color: hsl(270deg, 7%, 64%);
+}
+
+@media (max-width: 750px) {
+  main {
+    gap: 50px;
+  }
+}
+@media (max-width: 630px) {
+  main {
+    flex-direction: column;
+    gap: 50px;
+  }
+  main .texts {
+    width: 80vw;
+  }
+  body .bg {
+    width: 30vw;
+    height: 80vh;
+    position: absolute;
+    background-image: linear-gradient(to bottom, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+    top: 0;
+    left: -50px;
+    z-index: -1;
+    border-radius: 0 0 15vw 15vw;
+  }
+}
+@media (max-width: 375px) {
+  body .bg {
+    width: 50vw;
+    top: -100px;
+    left: -50px;
+  }
+  main {
+    flex-direction: column;
+    gap: 50px;
+  }
+  main .texts {
+    width: 80vw;
+  }
+  main .texts h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  main .texts p {
+    font-size: 14px;
+    text-align: center;
+  }
+  main {
+    gap: 30px;
+  }
+  main .mobile {
+    max-width: 80vw;
+  }
+  main .mobile header .mobile__notch {
+    width: 150px;
+  }
+  main .mobile .body div,
+  main .mobile .body button {
+    margin-bottom: 5px;
+  }
+  main .mobile .body .body__message-received-btn {
+    width: 180px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
