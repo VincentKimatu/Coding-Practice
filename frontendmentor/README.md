@@ -15,3 +15,4 @@
 7. [3-column-preview-card-component](./3-column-preview-card-component)
 8. [profile-card-component-main](./profile-card-component-main)
 9. [social-proof-section](./social-proof-section)
+10. [chat-app-css-illustration](./chat-app-css-illustration)
