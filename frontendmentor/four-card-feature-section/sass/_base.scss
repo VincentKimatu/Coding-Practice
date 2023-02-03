@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+canvas {
+  width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: $VeryLightGray;
+  max-width: 1440px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 52rem;
+    &__light {
+      font-size: 3rem;
+      font-weight: 200;
+      line-height: 1;
+      margin-top: 2rem;
+    }
+    &__bold {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 0 2rem;
+  }
+  .card {
+    background-color: $VeryLightGray;
+    border-radius: 5px;
+    padding: 3rem;
+    max-width: 30rem;
+
+    @include backGroundShadow;
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+    &__image {
+      width: 6rem;
+      margin-top: 3rem;
+      float: right;
+      img {
+        right: 0;
+      }
+    }
+  }
+
+  .card__one {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    border-top: 5px solid $Cyan;
+  }
+  .card__two {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border-top: 5px solid $Red;
+  }
+  .card__three {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    border-top: 5px solid $Orange;
+  }
+  .card__four {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    border-top: 5px solid $Blue;
+  }
+}
