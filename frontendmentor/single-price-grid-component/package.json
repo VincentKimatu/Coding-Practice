@@ -1,0 +1,10 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

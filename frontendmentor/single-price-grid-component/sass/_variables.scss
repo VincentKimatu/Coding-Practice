@@ -1,0 +1,22 @@
+// Colors
+// Primary
+$Cyan: hsl(179, 62%, 43%);
+$CyanLight: hsl(179, 74%, 62%);
+$BrightYellow: hsl(71, 73%, 54%);
+$White: hsl(0, 0%, 100%);
+
+// Neutral
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+
+@mixin mainBoxShadow {
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.13);
+}
+
+@mixin buttonShadow {
+  box-shadow: 0px 7px 17px -6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 7px 17px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 7px 17px -6px rgba(0, 0, 0, 0.5);
+}
