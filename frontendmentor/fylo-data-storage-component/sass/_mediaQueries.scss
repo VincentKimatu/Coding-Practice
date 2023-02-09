@@ -1,0 +1,70 @@
+@media (max-width: 750px) {
+  main {
+    max-width: 72rem;
+    flex-direction: column;
+  }
+
+  .fylo {
+    // min-width: 100%;
+    &__icons {
+      display: flex;
+      gap: 3rem;
+      padding-top: 3rem;
+
+      .fylo__icon {
+        height: 8rem;
+      }
+    }
+  }
+
+  .storage__info {
+    min-width: 100%;
+  }
+
+  .storage__info-pop {
+    left: 50%;
+    translate: -50%;
+    top: 80%;
+    width: 25%;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    background-size: cover;
+  }
+
+  main {
+    max-width: 27rem;
+  }
+
+  .fylo {
+    padding: 2rem;
+    &__logo {
+      width: 13rem;
+    }
+    &__icons {
+      gap: 2rem;
+
+      .fylo__icon {
+        @include flexCenter;
+        height: 6rem;
+        padding: 2rem;
+      }
+    }
+  }
+
+  .storage__info {
+    min-width: 100%;
+    &-text {
+      font-size: 1.2rem;
+    }
+  }
+
+  .storage__info-pop {
+    width: 35%;
+  }
+}

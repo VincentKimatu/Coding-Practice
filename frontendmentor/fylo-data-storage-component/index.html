@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Raleway Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Fylo data storage component</title>
+  </head>
+  <body>
+    <main>
+      <div class="fylo">
+        <div class="fylo__logo">
+          <img src="./images/logo.svg" alt="Fylo logo" />
+        </div>
+        <div class="fylo__icons">
+          <img
+            src="./images/icon-document.svg"
+            alt="document icon"
+            class="fylo__icon"
+          />
+          <img
+            src="./images/icon-folder.svg"
+            alt="folder icon"
+            class="fylo__icon"
+          />
+          <img
+            src="./images/icon-upload.svg"
+            alt="upload icon"
+            class="fylo__icon"
+          />
+        </div>
+      </div>
+
+      <div class="storage__info">
+        <p class="storage__info-text">
+          You've used <strong>815 GB</strong> of your storage
+        </p>
+        <p class="storage__info-pop"><strong>185</strong>GB LEFT</p>
+        <div class="storage__info__progress">
+          <div class="storage__info__progress-bar"></div>
+        </div>
+        <div class="storage__info-stats">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
