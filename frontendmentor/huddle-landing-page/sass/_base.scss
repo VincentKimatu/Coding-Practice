@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+canvas,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rem;
+  background-color: $Violet;
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+}
+
+button {
+  @include buttonShadow;
+  @include openSans(400, 1.5rem);
+  margin-top: 2rem;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: $White;
+  color: $Violet;
+  cursor: pointer;
+  transition: all 300ms;
+  &:hover {
+    background-color: $SoftMagenta;
+    color: $White;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0 8rem 0;
+  i {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+  }
+  h1 {
+    @include poppins(600, 2.5rem);
+    font-size: 2.5rem;
+  }
+}
+
+section {
+  display: flex;
+  gap: 4rem;
+  .illustration {
+    img {
+      max-width: 40vw;
+    }
+  }
+  .texts {
+    h1 {
+      @include poppins(600, 3.5rem);
+    }
+    p {
+      @include poppins(400, 1.6rem);
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin: 7rem 0;
+  .icon {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $White;
+    border-radius: 50%;
+    margin-left: 1rem;
+    color: $White;
+    cursor: pointer;
+    i {
+      font-size: 1.8rem;
+    }
+    &:hover {
+      border: 1px solid $SoftMagenta;
+      color: $SoftMagenta;
+    }
+  }
+}

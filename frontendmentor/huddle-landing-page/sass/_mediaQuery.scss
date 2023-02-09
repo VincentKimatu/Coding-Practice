@@ -1,0 +1,56 @@
+@media screen and (max-width: 720px) {
+  body {
+    padding: 0 5rem;
+  }
+
+  .logo {
+    padding: 2rem 0 4rem 0;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 2rem;
+    .illustration {
+      img {
+        max-width: 90vw;
+      }
+    }
+    .texts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .socials {
+    margin: 5rem 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0 2rem;
+    background-image: url(../images/bg-mobile.svg);
+  }
+
+  section {
+    .illustration {
+      img {
+        max-width: 90vw;
+      }
+    }
+    .texts {
+      h1 {
+        @include poppins(600, 2rem);
+      }
+      p {
+        @include poppins(400, 1.2rem);
+      }
+    }
+  }
+}
