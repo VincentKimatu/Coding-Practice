@@ -1,8 +1,8 @@
 export default {
   // Temp fonts
   fonts: {
-    poppins: 'Poppins, sans-serif',
-    openSans: 'Open Sans, sans-serif',
+    poppins: 'Poppins, sans-serif', // 600
+    openSans: 'Open Sans, sans-serif', // 400, 700
   },
   // Colors for layout
   colors: {

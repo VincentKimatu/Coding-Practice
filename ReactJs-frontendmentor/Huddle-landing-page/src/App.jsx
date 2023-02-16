@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import Header from './container/Header/Header';
-import Card from './container/Card/Card';
+import CardSection from './container/Card/CardSection';
 import Footer from './container/Footer/Footer';
 import GlobalStyle from './Global.style';
 import theme from './Styles/variables';
@@ -11,7 +11,7 @@ function App() {
       <>
         <GlobalStyle />
         <Header />
-        <Card />
+        <CardSection />
         <Footer />
       </>
     </ThemeProvider>
