@@ -23,4 +23,8 @@ export const CTAContainer = styled.div`
       font-size: 4rem;
     }
   }
+
+  @media ${({ theme }) => theme.breakpoints.mobile} {
+    margin: 3rem 5vw -7rem 5vw;
+  }
 `;

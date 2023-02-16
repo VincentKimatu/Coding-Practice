@@ -42,13 +42,18 @@ export const InfoContainer = styled.div`
       list-style: none;
       font-size: 1.6rem;
       padding: 0.5rem 1rem 0.5rem 0;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        color: ${({ theme }) => theme.colors.pink};
+      }
     }
   }
 
   @media ${({ theme }) => theme.breakpoints.mobile} {
     flex-direction: column;
     & > ul {
-      margin: 2rem;
+      margin: 1rem 0;
     }
   }
 `;
