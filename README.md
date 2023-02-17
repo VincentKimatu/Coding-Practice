@@ -13,4 +13,4 @@
 
 #### [ReactJs-frontendmentor](./ReactJs-frontendmentor)
 - Projects in this [directory](./frontendmentor) are challenges from [frontendmentor website](https://www.frontendmentor.io/).
-- Done using `ReactJs`.
+- Done using `ReactJs` and `Styled Components`.
