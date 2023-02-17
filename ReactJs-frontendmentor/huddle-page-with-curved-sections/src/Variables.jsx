@@ -5,6 +5,7 @@ export default {
   },
   colors: {
     Pink: 'hsl(322, 100%, 66%)',
+    White: 'hsl(0, 0%, 100%)',
     LightPink: ' hsl(321, 100%, 78%)',
     LightRed: 'hsl(0, 100%, 63%)',
 
