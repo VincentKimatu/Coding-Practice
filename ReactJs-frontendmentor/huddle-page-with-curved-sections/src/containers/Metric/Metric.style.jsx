@@ -32,4 +32,11 @@ export const MetricsSectionCard = styled.section`
     font-size: 1.2rem;
     font-weight: 400;
   }
+
+  @media ${({ theme }) => theme.breakPoints.mobile} {
+    margin-bottom: 5rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
 `;
