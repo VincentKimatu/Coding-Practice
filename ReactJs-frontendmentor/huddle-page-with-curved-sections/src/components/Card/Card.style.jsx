@@ -15,6 +15,8 @@ import {
 export const CardOne = styled.div`
   display: flex;
   gap: 4rem;
+  background-color: ${({ theme }) => theme.colors.VeryPaleBlue};
+  padding: 3rem;
 
   @media ${({ theme }) => theme.breakPoints.mobile} {
     flex-direction: column-reverse;
@@ -26,6 +28,7 @@ export const CardTwo = styled.div`
   flex-direction: row-reverse;
   gap: 4rem;
   margin: 10rem 0;
+  padding: 3rem;
 
   @media ${({ theme }) => theme.breakPoints.mobile} {
     flex-direction: column-reverse;

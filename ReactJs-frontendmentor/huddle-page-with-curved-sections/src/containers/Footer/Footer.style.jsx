@@ -115,6 +115,10 @@ export const FooterBtn = styled.button`
   border-radius: 5px;
   color: inherit;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
 
   @media ${({ theme }) => theme.breakPoints.mobile} {
     padding: 0.5rem 1rem;
