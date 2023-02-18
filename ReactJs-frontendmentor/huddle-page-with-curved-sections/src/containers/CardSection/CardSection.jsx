@@ -1,7 +1,13 @@
 import React from 'react';
+import { CardsSection } from './CardSection.style';
+import Cards from '../../components/Card/Card';
 
 function CardSection() {
-  return <div>CardSection</div>;
+  return (
+    <CardsSection>
+      <Cards />
+    </CardsSection>
+  );
 }
 
 export default CardSection;
