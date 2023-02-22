@@ -1,6 +1,6 @@
 export default {
   fonts: {
-    poppins: 'Raleway, sans-serif;', // 400, 700
+    Raleway: 'Raleway, sans-serif;', // 400, 700
     openSans: 'Open Sans, sans-serif;', // 400
   },
   colors: {
