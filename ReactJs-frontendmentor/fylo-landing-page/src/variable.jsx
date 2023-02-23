@@ -12,6 +12,9 @@ export default {
 
     LightGrayishBlue: 'hsl(240, 75%, 98%)',
     LightGray: 'hsl(0, 0%, 75%)',
+
+    Valid: '#35dc67',
+    Invalid: '#dc3545',
   },
   breakPoints: {
     mobile: 'screen and (max-width: 425px)',
