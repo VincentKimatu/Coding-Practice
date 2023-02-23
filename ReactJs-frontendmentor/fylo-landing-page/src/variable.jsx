@@ -6,6 +6,7 @@ export default {
   colors: {
     VeryDarkBlue: 'hsl(243, 87%, 12%)',
     DesaturatedBlue: 'hsl(238, 22%, 44%)',
+    White: 'hsl(0, 0%, 100%)',
 
     BrightBlue: 'hsl(224, 93%, 58%)',
     ModerateCyan: 'hsl(170, 45%, 43%)',
