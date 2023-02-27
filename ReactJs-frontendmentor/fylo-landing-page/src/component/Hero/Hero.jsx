@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyledForm, StyledHero, StyledIcon, StyledImage } from './Hero.style';
-// import { ImCross } from 'react-icons/im';
+import { StyledForm, StyledHero, StyledImage } from './Hero.style';
 import data from '../../constant/data';
 import Content from '../Content/Content';
 import { illustration1 } from '../../assets/images/images';
