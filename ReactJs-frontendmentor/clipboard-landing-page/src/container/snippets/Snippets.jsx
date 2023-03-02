@@ -15,10 +15,12 @@ function Snippets() {
   return (
     <StyledSnippetsSection>
       <SectionData title={data.title.one} paragraph={data.paragraph.one} />
+
       <StyledSnippetsContainer>
         <ImageContainer>
           <img src={ImageComputer} alt='Computer' />
         </ImageContainer>
+
         <PropertiesContainer>
           {snippets.map((item, id) => (
             <SnippetData item={item} key={id} />

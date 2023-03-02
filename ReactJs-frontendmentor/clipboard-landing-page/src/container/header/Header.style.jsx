@@ -1,10 +1,18 @@
 import styled from 'styled-components';
+import {
+  BackgroundHeaderDesktop,
+  BackgroundHeaderMobile,
+} from '../../assets/images/images';
 
 export const StyledHeaderSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0 7rem 0;
+
+  background-image: url(${BackgroundHeaderDesktop});
+  background-repeat: no-repeat;
+  background-size: auto;
 
   h1 {
     font-size: 4rem;
@@ -20,6 +28,8 @@ export const StyledHeaderSection = styled.section`
   }
 
   @media ${(props) => props.theme.breakPoints.mobile} {
+    background-image: url(${BackgroundHeaderMobile});
+    background-repeat: no-repeat;
     padding: 4rem 1.5rem 6rem 1.5rem;
 
     h1 {
