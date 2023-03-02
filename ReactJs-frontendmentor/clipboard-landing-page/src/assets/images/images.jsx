@@ -15,7 +15,7 @@ import IBMLogo from './logo-ibm.png';
 import MicrosoftLogo from './logo-microsoft.png';
 import VectorGraphicLogo from './logo-vector-graphics.png';
 
-export default {
+export {
   BackgroundHeaderDesktop,
   BackgroundHeaderMobile,
   IconBlacklist,

@@ -1,10 +1,11 @@
 export default {
   colors: {
-    StrongCyan: 'hsl(171, 66%, 44%)',
-    LightBlue: 'hsl(233, 100%, 69%)',
+    StrongCyan: '#26baa4',
+    LightBlue: '#6173ff',
+    White: '#ffffff',
 
-    DarkGrayishBlue: 'hsl(210, 10%, 33%)',
-    GrayishBlue: 'hsl(201, 11%, 66%)',
+    DarkGrayishBlue: '#4c545d',
+    GrayishBlue: '#9fabb2',
   },
   breakPoints: {
     mobile: 'screen and (max-width: 425px)',
