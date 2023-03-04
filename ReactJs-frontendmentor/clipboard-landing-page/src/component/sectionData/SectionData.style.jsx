@@ -19,6 +19,7 @@ export const StyledSectionData = styled.div`
   }
 
   @media ${(props) => props.theme.breakPoints.mobile} {
+    padding: 0 2rem;
     h1 {
       text-align: center;
       font-size: 1.6rem;
