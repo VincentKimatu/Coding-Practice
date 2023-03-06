@@ -11,7 +11,7 @@ function Brands() {
     <StyledBrandSection>
       <BrandContainer>
         {brands.map((item, id) => (
-          <ImageContainer>
+          <ImageContainer key={id}>
             <img src={item.logo} key={id} alt='logo' />
           </ImageContainer>
         ))}
