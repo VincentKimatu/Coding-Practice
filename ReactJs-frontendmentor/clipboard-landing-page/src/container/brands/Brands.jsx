@@ -1,7 +1,23 @@
 import React from 'react';
+import {
+  BrandContainer,
+  ImageContainer,
+  StyledBrandSection,
+} from './Brands.style';
+import brands from '../../constant/brands';
 
 function Brands() {
-  return <div>Brands</div>;
+  return (
+    <StyledBrandSection>
+      <BrandContainer>
+        {brands.map((item, id) => (
+          <ImageContainer>
+            <img src={item.logo} key={id} alt='logo' />
+          </ImageContainer>
+        ))}
+      </BrandContainer>
+    </StyledBrandSection>
+  );
 }
 
 export default Brands;
